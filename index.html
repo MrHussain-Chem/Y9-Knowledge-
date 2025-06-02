@@ -1,0 +1,840 @@
+<div>
+                        <h4>Conservation of Mass</h4>
+                        <div class="equation">Mass reactants = Mass products</div>
+                        <p><strong>Rule:</strong> Mass never lost or gained in reactions</p>
+                    </div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y9 Chemistry Knowledge Organiser</title>
+    <style>
+        @media print {
+            body { margin: 0; }
+            .page-break { page-break-before: always; }
+            .no-print { display: none; }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            background-color: #f5f5f5;
+            font-size: 10px;
+            line-height: 1.2;
+        }
+        
+        .page {
+            background: white;
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto 20px auto;
+            padding: 15mm;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8mm;
+            grid-template-rows: auto 1fr 1fr;
+        }
+        
+        .header {
+            grid-column: 1 / -1;
+            background: white;
+            border: 2px solid #2c3e50;
+            padding: 8px 12px;
+            text-align: center;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .header h2 {
+            margin: 2px 0 0 0;
+            font-size: 14px;
+            font-weight: normal;
+            color: #34495e;
+        }
+        
+        .section {
+            border: 2px solid;
+            background: white;
+            margin-bottom: 8px;
+            padding: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Topic Colors */
+        .atomic-structure { border-color: #e74c3c; }
+        .atomic-structure .section-title { background: #e74c3c; }
+        .atomic-structure h4 { color: #c0392b; }
+        .atomic-structure strong { color: #c0392b; }
+        
+        .key-terms { border-color: #3498db; }
+        .key-terms .section-title { background: #3498db; }
+        .key-terms h4 { color: #2980b9; }
+        .key-terms strong { color: #2980b9; }
+        
+        .periodic-table { border-color: #2ecc71; }
+        .periodic-table .section-title { background: #2ecc71; }
+        .periodic-table h4 { color: #27ae60; }
+        .periodic-table strong { color: #27ae60; }
+        
+        .separation { border-color: #f39c12; }
+        .separation .section-title { background: #f39c12; }
+        .separation h4 { color: #e67e22; }
+        .separation strong { color: #e67e22; }
+        
+        .quantitative { border-color: #9b59b6; }
+        .quantitative .section-title { background: #9b59b6; }
+        .quantitative h4 { color: #8e44ad; }
+        .quantitative strong { color: #8e44ad; }
+        
+        .resources { border-color: #1abc9c; }
+        .resources .section-title { background: #1abc9c; }
+        .resources h4 { color: #16a085; }
+        .resources strong { color: #16a085; }
+        
+        .atmosphere { border-color: #34495e; }
+        .atmosphere .section-title { background: #34495e; }
+        .atmosphere h4 { color: #2c3e50; }
+        .atmosphere strong { color: #2c3e50; }
+        
+        .calculations { border-color: #e67e22; }
+        .calculations .section-title { background: #e67e22; }
+        .calculations h4 { color: #d35400; }
+        .calculations strong { color: #d35400; }
+        
+        .section-title {
+            color: white;
+            padding: 6px 10px;
+            margin: 0;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .section-content {
+            padding: 8px;
+            flex: 1;
+            overflow: hidden;
+        }
+        
+        .full-width {
+            grid-column: 1 / -1;
+        }
+        
+        h4 {
+            margin: 8px 0 4px 0;
+            font-size: 10px;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        h5 {
+            margin: 6px 0 3px 0;
+            font-size: 9px;
+            font-weight: bold;
+        }
+        
+        ul {
+            margin: 0 0 6px 0;
+            padding-left: 14px;
+        }
+        
+        ul li {
+            margin-bottom: 2px;
+            font-size: 9px;
+        }
+        
+        .key-terms-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 4px 0;
+            font-size: 8px;
+        }
+        
+        .key-terms-table th {
+            background: #34495e;
+            color: white;
+            padding: 3px 4px;
+            text-align: left;
+            font-weight: bold;
+            border: 1px solid #34495e;
+        }
+        
+        .key-terms-table td {
+            border: 1px solid #bdc3c7;
+            padding: 3px 4px;
+            vertical-align: top;
+        }
+        
+        .key-terms-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .formula {
+            font-family: monospace;
+            background: #ecf0f1;
+            padding: 1px 2px;
+            border-radius: 2px;
+            font-weight: bold;
+            font-size: 8px;
+        }
+        
+        .equation {
+            text-align: center;
+            font-family: monospace;
+            font-size: 9px;
+            background: #ecf0f1;
+            padding: 4px;
+            border-radius: 3px;
+            margin: 4px 0;
+            border: 1px solid #bdc3c7;
+        }
+        
+        .separation-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 4px;
+            font-size: 8px;
+        }
+        
+        .separation-table th {
+            background: #34495e;
+            color: white;
+            padding: 3px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid #34495e;
+        }
+        
+        .separation-table td {
+            border: 1px solid #bdc3c7;
+            padding: 3px;
+            vertical-align: top;
+        }
+        
+        .separation-table .method-name {
+            font-weight: bold;
+            text-align: left;
+        }
+        
+        .separation-table .explanation {
+            text-align: left;
+            font-size: 7px;
+        }
+        
+        .periodic-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4px;
+            margin: 4px 0;
+        }
+        
+        .group-box {
+            border: 1px solid #7f8c8d;
+            padding: 4px;
+            text-align: center;
+            border-radius: 3px;
+            font-size: 8px;
+        }
+        
+        .group1 { background: #ffebee; }
+        .group7 { background: #e8f5e8; }
+        .group0 { background: #e3f2fd; }
+        
+        .atom-model-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 4px 0;
+            font-size: 7px;
+        }
+        
+        .atom-model-table th {
+            background: #34495e;
+            color: white;
+            padding: 3px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid #34495e;
+        }
+        
+        .atom-model-table td {
+            border: 1px solid #bdc3c7;
+            padding: 3px;
+            vertical-align: top;
+            text-align: center;
+        }
+        
+        .model-diagram {
+            width: 30px;
+            height: 30px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .dalton { 
+            width: 30px; 
+            height: 30px; 
+            background: #b8b8d4; 
+            border-radius: 50%; 
+        }
+        
+        .thomson { 
+            width: 30px; 
+            height: 30px; 
+            background: #d4b8b8; 
+            border-radius: 50%; 
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: blue;
+            font-weight: bold;
+            font-size: 8px;
+        }
+        
+        .thomson::after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: #ff6600;
+            border-radius: 50%;
+            top: 4px;
+            left: 6px;
+            box-shadow: 
+                8px 2px 0 #ff6600,
+                -2px 10px 0 #ff6600,
+                12px 8px 0 #ff6600,
+                4px 15px 0 #ff6600;
+        }
+        
+        .rutherford {
+            width: 30px;
+            height: 30px;
+            position: relative;
+        }
+        
+        .rutherford .nucleus {
+            width: 8px;
+            height: 8px;
+            background: #4d79a4;
+            border-radius: 50%;
+            position: absolute;
+            top: 11px;
+            left: 11px;
+            color: white;
+            font-size: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .rutherford .electron {
+            width: 3px;
+            height: 3px;
+            background: #ff6600;
+            border-radius: 50%;
+            position: absolute;
+        }
+        
+        .rutherford .orbit {
+            border: 1px dashed #999;
+            border-radius: 50%;
+            position: absolute;
+        }
+        
+        .bohr {
+            width: 30px;
+            height: 30px;
+            position: relative;
+        }
+        
+        .bohr .nucleus {
+            width: 6px;
+            height: 6px;
+            background: #4d79a4;
+            border-radius: 50%;
+            position: absolute;
+            top: 12px;
+            left: 12px;
+        }
+        
+        .bohr .shell {
+            border: 1px solid #666;
+            border-radius: 50%;
+            position: absolute;
+        }
+        
+        .bohr .electron {
+            width: 3px;
+            height: 3px;
+            background: #ff6600;
+            border-radius: 50%;
+            position: absolute;
+        }
+        
+        .calculations-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 8px;
+        }
+        
+        .print-info {
+            grid-column: 1 / -1;
+            text-align: center;
+            font-size: 8px;
+            color: #7f8c8d;
+            margin-top: 10px;
+            padding: 5px;
+            border-top: 1px solid #bdc3c7;
+        }
+        
+        @media print {
+            .print-info { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <!-- PAGE 1 (FRONT) -->
+    <div class="page">
+        <div class="header">
+            <h1>Chemistry Knowledge Organiser</h1>
+            <h2>Year 9 - AQA GCSE Combined Science (Higher Tier)</h2>
+        </div>
+        
+        <div class="section atomic-structure">
+            <h3 class="section-title">Atomic Structure & Periodic Table</h3>
+            <div class="section-content">
+                <h4>Atomic Structure</h4>
+                <ul>
+                    <li><strong>Atom:</strong> Nucleus (protons + neutrons) surrounded by electrons in shells</li>
+                    <li><strong>Mass number</strong> = protons + neutrons (top number)</li>
+                    <li><strong>Atomic number</strong> = number of protons (bottom number)</li>
+                    <li><strong>Relative masses:</strong> Proton = 1, Neutron = 1, Electron = 1/1836</li>
+                    <li><strong>Electronic structure:</strong> 1st shell max 2e⁻, 2nd & 3rd shell max 8e⁻</li>
+                </ul>
+                
+                <h4>Development of Atomic Model</h4>
+                <table class="atom-model-table">
+                    <tr>
+                        <th>Scientist</th>
+                        <th>Discovery</th>
+                        <th>Model</th>
+                        <th>Diagram</th>
+                    </tr>
+                    <tr>
+                        <td>Dalton</td>
+                        <td>Solid atom</td>
+                        <td>Solid sphere</td>
+                        <td><div class="model-diagram dalton"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Thomson</td>
+                        <td>Electron</td>
+                        <td>Plum pudding</td>
+                        <td><div class="model-diagram thomson">+</div></td>
+                    </tr>
+                    <tr>
+                        <td>Rutherford</td>
+                        <td>Nucleus</td>
+                        <td>Nuclear model</td>
+                        <td>
+                            <div class="model-diagram rutherford">
+                                <div class="nucleus">+</div>
+                                <div class="electron" style="top: 2px; left: 6px;"></div>
+                                <div class="electron" style="top: 6px; right: 2px;"></div>
+                                <div class="electron" style="bottom: 2px; left: 4px;"></div>
+                                <div class="electron" style="bottom: 6px; right: 6px;"></div>
+                                <div class="orbit" style="width: 24px; height: 24px; top: 3px; left: 3px;"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bohr</td>
+                        <td>Energy levels</td>
+                        <td>Planetary model</td>
+                        <td>
+                            <div class="model-diagram bohr">
+                                <div class="nucleus"></div>
+                                <div class="shell" style="width: 16px; height: 16px; top: 7px; left: 7px;"></div>
+                                <div class="shell" style="width: 26px; height: 26px; top: 2px; left: 2px;"></div>
+                                <div class="electron" style="top: 6px; left: 13px;"></div>
+                                <div class="electron" style="top: 18px; left: 13px;"></div>
+                                <div class="electron" style="top: 1px; left: 13px;"></div>
+                                <div class="electron" style="top: 13px; left: 1px;"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                
+                <h4>Isotopes</h4>
+                <ul>
+                    <li>Atoms of the same element with the same number of protons but different number of neutrons</li>
+                    <li><strong>Relative atomic mass (Ar):</strong> average mass considering abundance</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section key-terms">
+            <h3 class="section-title">Key Terms - Atomic Structure</h3>
+            <div class="section-content">
+                <table class="key-terms-table">
+                    <tr>
+                        <th>Term</th>
+                        <th>Definition</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Atom</strong></td>
+                        <td>Smallest part of element, neutral charge</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Element</strong></td>
+                        <td>Substance with one type of atom</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Compound</strong></td>
+                        <td>Two+ elements chemically bonded</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mixture</strong></td>
+                        <td>Two+ substances not chemically bonded</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Isotope</strong></td>
+                        <td>Same element, different neutrons</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ion</strong></td>
+                        <td>Atom that gained/lost electrons</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mass Number</strong></td>
+                        <td>Protons + neutrons</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Atomic Number</strong></td>
+                        <td>Number of protons</td>
+                    </tr>
+                </table>
+                
+                <h4>Subatomic Particles</h4>
+                <table class="key-terms-table">
+                    <tr>
+                        <th>Particle</th>
+                        <th>Charge</th>
+                        <th>Mass</th>
+                        <th>Location</th>
+                    </tr>
+                    <tr>
+                        <td>Proton</td>
+                        <td>+1</td>
+                        <td>1</td>
+                        <td>Nucleus</td>
+                    </tr>
+                    <tr>
+                        <td>Neutron</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>Nucleus</td>
+                    </tr>
+                    <tr>
+                        <td>Electron</td>
+                        <td>-1</td>
+                        <td>Almost 0</td>
+                        <td>Electron shells</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <div class="section periodic-table">
+            <h3 class="section-title">The Periodic Table</h3>
+            <div class="section-content">
+                <h4>Modern Periodic Table</h4>
+                <ul>
+                    <li><strong>Groups</strong> (columns): Same outer electrons</li>
+                    <li><strong>Periods</strong> (rows): Same electron shells</li>
+                    <li>Arranged by <strong>atomic number</strong></li>
+                    <li>Same group = similar properties</li>
+                </ul>
+                
+                <h4>Historical Development</h4>
+                <ul>
+                    <li><strong>Newlands:</strong> Arranged by atomic weight, no gaps, no Group 0</li>
+                    <li><strong>Mendeleev:</strong> Arranged by atomic weight, left gaps for unknown elements</li>
+                </ul>
+                
+                <div class="periodic-section">
+                    <div class="group-box group1">
+                        <strong>Group 1</strong><br>
+                        Alkali Metals<br>
+                        1 outer electron
+                    </div>
+                    <div class="group-box group7">
+                        <strong>Group 7</strong><br>
+                        Halogens<br>
+                        7 outer electrons
+                    </div>
+                    <div class="group-box group0">
+                        <strong>Group 0</strong><br>
+                        Noble Gases<br>
+                        Full outer shell
+                    </div>
+                </div>
+                
+                <h4>Group 1 - Alkali Metals</h4>
+                <ul>
+                    <li><strong>Reactivity increases</strong> down group</li>
+                    <li>React with water to form metal hydroxide + hydrogen</li>
+                    <li>React with oxygen to form metal oxide</li>
+                    <li><strong>Why reactivity increases:</strong> More electron shells → outer electron further from nucleus → easier to lose outer electron</li>
+                </ul>
+                
+                <h4>Group 7 - Halogens</h4>
+                <ul>
+                    <li><strong>Reactivity decreases</strong> down group</li>
+                    <li>More reactive displaces less reactive</li>
+                    <li><strong>Why reactivity decreases:</strong> More electron shells → outer shell further from nucleus → harder to attract electrons</li>
+                </ul>
+                
+                <h4>Key Reactions</h4>
+                <ul>
+                    <li>Metal + Water → Metal hydroxide + H₂</li>
+                    <li>Metal + O₂ → Metal oxide</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section separation">
+            <h3 class="section-title">Chemical Analysis - Separation</h3>
+            <div class="section-content">
+                <table class="separation-table">
+                    <tr>
+                        <th>Method</th>
+                        <th>Separates</th>
+                        <th>How it works</th>
+                    </tr>
+                    <tr>
+                        <td class="method-name">Filtration</td>
+                        <td>Insoluble solid from liquid</td>
+                        <td class="explanation">Solid trapped by filter paper</td>
+                    </tr>
+                    <tr>
+                        <td class="method-name">Chromatography</td>
+                        <td>Soluble substances</td>
+                        <td class="explanation">Different distances traveled based on solubility</td>
+                    </tr>
+                    <tr>
+                        <td class="method-name">Distillation</td>
+                        <td>Liquids with different b.p.</td>
+                        <td class="explanation">Evaporate and condense at different temperatures</td>
+                    </tr>
+                    <tr>
+                        <td class="method-name">Crystallisation</td>
+                        <td>Soluble solid from solution</td>
+                        <td class="explanation">Evaporate solvent, crystals form</td>
+                    </tr>
+                </table>
+                
+                <h4>Gas Tests</h4>
+                <table class="key-terms-table">
+                    <tr>
+                        <th>Gas</th>
+                        <th>Test</th>
+                        <th>Result</th>
+                    </tr>
+                    <tr>
+                        <td>Hydrogen</td>
+                        <td>Burning splint</td>
+                        <td>Squeaky pop</td>
+                    </tr>
+                    <tr>
+                        <td>Oxygen</td>
+                        <td>Glowing splint</td>
+                        <td>Relights</td>
+                    </tr>
+                    <tr>
+                        <td>CO₂</td>
+                        <td>Limewater</td>
+                        <td>Turns cloudy</td>
+                    </tr>
+                    <tr>
+                        <td>Chlorine</td>
+                        <td>Damp litmus</td>
+                        <td>Bleaches white</td>
+                    </tr>
+                </table>
+                
+                <h4>Rf Value</h4>
+                <div class="equation">
+                    Rf = Distance moved by colour (solute) ÷ Distance moved by solvent
+                </div>
+                <ul>
+                    <li>Values between 0 and 1</li>
+                    <li>Used to identify substances</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="print-info no-print">
+            Page 1 of 2 - Print double-sided for complete knowledge organiser
+        </div>
+    </div>
+    
+    <!-- PAGE 2 (BACK) -->
+    <div class="page page-break">
+        <div class="section quantitative">
+            <h3 class="section-title">Quantitative Chemistry</h3>
+            <div class="section-content">
+                <h4>Relative Formula Mass (Mr)</h4>
+                <ul>
+                    <li><strong>Step 1:</strong> Identify elements</li>
+                    <li><strong>Step 2:</strong> Count atoms of each</li>
+                    <li><strong>Step 3:</strong> Find Ar from periodic table</li>
+                    <li><strong>Step 4:</strong> Multiply atoms × Ar</li>
+                    <li><strong>Step 5:</strong> Add all up</li>
+                </ul>
+                <p><strong>Example:</strong> <span class="formula">CaCO₃ = 40 + 12 + (16 × 3) = 100</span></p>
+                
+                <h4>Percentage Mass</h4>
+                <div class="equation">
+                    % of element = (Ar of element × atoms of element ÷ Mr of compound) × 100
+                </div>
+                <p><strong>Example:</strong> % O in CaCO₃ = (48 ÷ 100) × 100 = 48%</p>
+                
+                <h4>Balanced Equations</h4>
+                <ul>
+                    <li>Same atoms both sides</li>
+                    <li>Only change big numbers</li>
+                    <li><strong>Example:</strong> 2Mg + O₂ → 2MgO</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section resources">
+            <h3 class="section-title">Using Resources - Earth's Resources</h3>
+            <div class="section-content">
+                <h4>Natural Resources</h4>
+                <ul>
+                    <li><strong>Finite:</strong> Cannot be replaced (fossil fuels, metals)</li>
+                    <li><strong>Renewable:</strong> Replaced within lifetime (wood, water)</li>
+                </ul>
+                
+                <h4>Water Treatment</h4>
+                <ul>
+                    <li><strong>Potable water:</strong> Safe to drink (low salt, low microbes)</li>
+                    <li><strong>Freshwater treatment:</strong>
+                        <ul style="font-size: 8px;">
+                            <li>Collection → Storage → Screening</li>
+                            <li>Coagulation → Sedimentation → Filtration</li>
+                            <li>Sterilisation → Neutralisation</li>
+                        </ul>
+                    </li>
+                    <li><strong>Desalination:</strong> Remove salt (distillation/reverse osmosis)</li>
+                    <li><strong>Sewage treatment:</strong>
+                        <ul style="font-size: 8px;">
+                            <li>Screening → Sedimentation</li>
+                            <li>Aerobic digestion of effluent → Sterilisation</li>
+                            <li>Anaerobic digestion of sludge</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <h4>Tests</h4>
+                <ul>
+                    <li><strong>Sodium ions:</strong> Flame test (yellow)</li>
+                    <li><strong>Chloride ions:</strong> HNO₃ + AgNO₃ (white precipitate)</li>
+                    <li><strong>Pure water:</strong> Boils at exactly 100°C</li>
+                </ul>
+                
+                <h4>Life Cycle Assessment</h4>
+                <ul>
+                    <li>Assess environmental impact</li>
+                    <li><strong>Stages:</strong> Extraction → Manufacture → Use → Disposal</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section atmosphere">
+            <h3 class="section-title">Earth's Atmosphere</h3>
+            <div class="section-content">
+                <h4>Evolution of Atmosphere</h4>
+                <ul>
+                    <li><strong>Phase 1:</strong> Volcanic activity (CO₂, H₂O, N₂)</li>
+                    <li><strong>Phase 2:</strong> Water vapour condensed → oceans</li>
+                    <li><strong>Phase 3:</strong> Photosynthesis increased O₂, decreased CO₂</li>
+                </ul>
+                
+                <h4>Current Composition</h4>
+                <ul>
+                    <li><strong>Nitrogen:</strong> ~78%</li>
+                    <li><strong>Oxygen:</strong> ~21%</li>
+                    <li><strong>Argon:</strong> ~1%</li>
+                    <li><strong>Carbon dioxide:</strong> ~0.04%</li>
+                </ul>
+                
+                <h4>Greenhouse Effect</h4>
+                <ul>
+                    <li><strong>Greenhouse gases:</strong> CO₂, CH₄, H₂O vapour</li>
+                    <li>Absorb and re-emit thermal radiation</li>
+                    <li>Keep Earth warm for life</li>
+                    <li><strong>Enhanced effect:</strong> Human activities increase gases</li>
+                </ul>
+                
+                <h4>Climate Change</h4>
+                <ul>
+                    <li><strong>Causes:</strong> Fossil fuels, deforestation, agriculture</li>
+                    <li><strong>Effects:</strong> Sea level rise, extreme weather</li>
+                    <li><strong>Solutions:</strong> Renewable energy, carbon capture</li>
+                </ul>
+                
+                <h4>Carbon Footprints</h4>
+                <ul>
+                    <li>Total greenhouse gas emissions</li>
+                    <li><strong>Reduce by:</strong> Renewables, efficient transport</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section calculations full-width">
+            <h3 class="section-title">Key Calculations & Equations for Higher Tier</h3>
+            <div class="section-content">
+                <div class="calculations-grid">
+                    <div>
+                        <h4>Relative Formula Mass</h4>
+                        <div class="equation">Mr = Add up all Ar values</div>
+                        <p><strong>Example:</strong> H₂SO₄ = (1×2) + 32 + (16×4) = 98</p>
+                        
+                        <h4>Percentage Mass</h4>
+                        <div class="equation">% of element = (Ar of element × atoms of element ÷ Mr of compound) × 100</div>
+                        <p><strong>Example:</strong> % O in H₂O = (16 ÷ 18) × 100 = 89%</p>
+                    </div>
+                    <div>
+                        <h4>Rf Value</h4>
+                        <div class="equation">Rf = distance moved by colour (solute) ÷ distance moved by solvent</div>
+                        <p><strong>Example:</strong> Colour moves 4cm, solvent moves 10cm: Rf = 4 ÷ 10 = 0.4</p>
+                        
+                        <h4>Conservation of Mass</h4>
+                        <div class="equation">Mass reactants = Mass products</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="print-info no-print">
+            Page 2 of 2 - Year 9 Chemistry Knowledge Organiser Complete
+        </div>
+    </div>
+</body>
+</html>
